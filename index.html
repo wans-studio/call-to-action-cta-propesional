@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/pp1.jpg">
+    <title>call to action cta propesional - by JiwanDev</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 flex items-center justify-center p-4">
+    
+    <!-- Main Container -->
+    <div class="text-center max-w-4xl mx-auto">
+        <!-- Hero Section -->
+        <div class="mb-12 animate-fade-in">
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Transformasi Digital
+                <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
+                    Dimulai dari Sini
+                </span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                Bergabunglah dengan ribuan pengguna yang telah merasakan pengalaman luar biasa bersama kami
+            </p>
+        </div>
+
+        <!-- CTA Button Container -->
+        <div class="relative inline-block">
+            <!-- Tooltip -->
+            <div id="tooltip" class="tooltip">
+                <span class="tooltip-text">Klik untuk memulai perjalanan Anda!</span>
+            </div>
+            
+            <!-- Main CTA Button -->
+            <button id="ctaButton" class="cta-button group">
+                <span class="relative z-10 flex items-center justify-center gap-3">
+                    <svg class="w-6 h-6 transition-transform group-hover:rotate-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                    <span class="font-bold text-lg">Coba Sekarang</span>
+                    <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                    </svg>
+                </span>
+                <span class="ripple"></span>
+            </button>
+        </div>
+
+        <!-- Features Section -->
+        <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-white">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Cepat & Mudah</h3>
+                <p class="text-gray-400">Proses pendaftaran hanya dalam hitungan detik</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Aman Terpercaya</h3>
+                <p class="text-gray-400">Data Anda dilindungi dengan enkripsi tingkat tinggi</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-semibold mb-2">Dukungan 24/7</h3>
+                <p class="text-gray-400">Tim kami siap membantu Anda kapan saja</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-icon">
+                <svg class="w-16 h-16 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">Terima Kasih!</h2>
+            <p class="text-xl text-gray-600 mb-8">Pendaftaran Anda berhasil!</p>
+            <p class="text-gray-500 mb-8">Kami akan menghubungi Anda segera untuk langkah selanjutnya.</p>
+            <button id="closeModal" class="close-button">
+                Tutup
+            </button>
+        </div>
+    </div>
+
+    <div class="watermark">by JiwanDev</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
